@@ -1,4 +1,4 @@
-BIN := rexdep
+BIN := ./scripts/rexdep
 VERSION := $$(make -s show-version)
 VERSION_PATH := .
 CURRENT_REVISION := $(shell git rev-parse --short HEAD)

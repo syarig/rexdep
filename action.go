@@ -34,7 +34,8 @@ func output(config *Config, dependency *Dependency, errors []error) {
 	}
 	switch config.Format {
 	case "dot":
-		outputDot(config.Output, dependency)
+		//outputDot(config.Output, dependency)
+		fmt.Print(dependency.graph.String())
 	case "csv":
 		outputCsv(config.Output, dependency)
 	case "tsv":
